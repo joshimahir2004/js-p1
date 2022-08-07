@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+}
+.dark-icon{
+    
+    background-color: var(--purpole);
+    align-items: center;
+}
+
+
+
+:root{
+     --black: black;
+    --purpole: #8700ff;
+    --shade : rgba(0, 0, 0, 0.178);
+    --white: white;
+    --light-pur: #731aaa; 
+    
+    
+    
+    
+}
+.dark-icon{
+    position: sticky;
+    top: 0rem;
+    height: 5vh;
+    width: 100%;
+   
+    
+    background-color: var(--white);
+    /* border-radius: 200px; */
+    color: white;
+}
+
+.dark_theme{
+    --black: rgb(255, 255, 255);
+    --purpole: #6E85B7;
+    --shade : rgba(0, 0, 0, 0.178);
+    --white: rgb(0, 0, 0);
+    --light-pur: #B2C8DF;
+    --font-black: black;
+    --light-blue :#F8F9D7;
+    
+}
+
+
+
+.shade {
+    width: 70%;
+    height: 100%;
+    background-color: var(--shade);
+}
+
+.box {
+    /* display: flex; */
+    height: 100vh;
+  width: 100%;
+  background-color: var(--purpole);
+  
+  color: var(--white);
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+    transform: translateY(30px);
+    color: var(--black);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+      color: var(--white);
+    }
+}
+#name {
+    animation-name: animation;
+    animation-duration: 2s;
+    
+    padding-top: 20rem;
+    text-align: center;
+}
+#_name {
+    animation-name: animation;
+    animation-duration: 2.5s;
+    text-align: center;
+    
+    font-size: medium;
+}
+
+@keyframes naruto {
+    from {
+    opacity: 0;
+    transform: translateY(30px);
+    color: var(--black);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+      color: var(--white);
+    }
+}
+#img-naruto {
+  animation: naruto 2s  0s;
+  width: 15rem;
+  margin: 2rem;
+  border-radius: 40%;
+}
+.info{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--light-pur);
+}
+#info-naruto{
+    color: var(--font-black);
+}   
